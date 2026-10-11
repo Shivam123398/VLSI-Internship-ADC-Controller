@@ -1,0 +1,35 @@
+FINITE STATE MACHINE (FSM) DOCUMENTATION
+
+Project: ADC-Based Sensor Data Acquisition Controller
+Top Module: adc_controller
+
+1. IDLE STATE
+The controller waits for the start signal. When start becomes high,
+the controller moves to the ACQUIRE state and sets busy high.
+
+2. ACQUIRE STATE
+The controller captures the 8-bit ADC input data into the internal
+data register named data_reg.
+
+3. STORE STATE
+The captured data is transferred from data_reg to data_out.
+
+4. VALID STATE
+The controller sets data_valid high to indicate that the output data
+is ready. It then returns to the IDLE state.
+
+STATE TRANSITIONS
+IDLE -> ACQUIRE -> STORE -> VALID -> IDLE
+
+RESET BEHAVIOUR
+When reset is high at a rising clock edge, the controller returns
+to IDLE and clears its registers and status outputs.
+
+FUNCTIONAL VERIFICATION
+Tested ADC samples: 100, 150, 200
+Expected results: 100, 150, 200
+Actual results: 100, 150, 200
+Total PASS: 3
+Total FAIL: 0
+Overall simulation result: PASS
+

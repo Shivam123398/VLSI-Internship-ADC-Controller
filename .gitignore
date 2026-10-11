@@ -1,0 +1,11 @@
+# Compiled simulation executable
+Simulation/adc_sim
+
+# Temporary waveform and simulator files
+*.vvp
+*.log
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+Thumbs.db

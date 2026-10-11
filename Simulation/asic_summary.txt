@@ -1,0 +1,14 @@
+ASIC SYNTHESIS SUMMARY
+Project: ADC-Based Sensor Data Acquisition Controller
+Tool: Yosys 0.69
+
+Synthesis Status: Successful
+Top Module: adc_controller
+Total Generic Cells: 31
+D Flip-Flop Cells (DFF): 4
+SDFFE Cells: 18
+Structural Problems Reported: 0
+
+Note:
+These are generic synthesis statistics, not actual ASIC
+area, power, timing, or post-layout results.
