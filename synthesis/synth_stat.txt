@@ -1,0 +1,40 @@
+
+21. Printing statistics.
+
+=== adc_controller ===
+
+        +----------------------------Count including submodules.
+        |        +-------------------Area including submodules.
+        |        |        +----------Local count, excluding submodules.
+        |        |        |        +-Local area, excluding submodules.
+        |        |        |        | 
+      107        -      107        - wires
+      121        -      121        - wire bits
+       19        -       19        - public wires
+       33        -       33        - public wire bits
+        7        -        7        - ports
+       21        -       21        - port bits
+        -        -        -        - memories
+        -        -        -        - memory bits
+        -        -        -        - processes
+       88  230.356       88  230.356 cells
+        1    1.064        1    1.064   AND2_X1
+        1    1.064        1    1.064   AOI21_X1
+       16   55.328       16   55.328   AOI21_X4
+        2     13.3        2     13.3   BUF_X16
+        2    3.724        2    3.724   BUF_X4
+        1    3.458        1    3.458   BUF_X8
+       22   99.484       22   99.484   DFF_X1
+        2    1.064        2    1.064   INV_X1
+        2    4.788        2    4.788   INV_X8
+        1    1.862        1    1.862   MUX2_X1
+       16   12.768       16   12.768   NAND2_X1
+       16    21.28       16    21.28   NAND2_X2
+        3     3.99        3     3.99   NOR2_X2
+        1    2.394        1    2.394   NOR2_X4
+        1    3.724        1    3.724   NOR3_X4
+        1    1.064        1    1.064   OAI21_X1
+
+   Chip area for module '\adc_controller': 230.356000
+     of which used for sequential elements: 99.484000 (43.19%)
+

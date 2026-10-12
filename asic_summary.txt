@@ -1,0 +1,54 @@
+PROJECT: RTL Design and ASIC Implementation Study of an ADC-Based Sensor Data Acquisition Controller
+
+PLATFORM: Nangate45
+FLOW: OpenROAD Flow Scripts
+RTL TOP MODULE: adc_controller
+CLOCK PERIOD CONSTRAINT: 10 ns
+TARGET CLOCK FREQUENCY: 100 MHz
+
+PHYSICAL DESIGN RESULTS
+Die area: 2419.66 um^2
+Core area: 1472.31 um^2
+Final standard-cell instance area: 246.316 um^2
+Standard-cell utilization: 16.7299%
+Final component instances: 504
+Standard-cell instances: 161
+Sequential-cell instances: 22
+
+TIMING RESULTS
+Critical path delay reported by flow: 2.2951 ns
+Setup worst slack: 7.73541 ns
+Hold worst slack: 0.11557 ns
+Setup TNS: 0
+Hold TNS: 0
+Setup violation count: 0
+Hold violation count: 0
+
+POWER ESTIMATE
+Internal power: 19.7097 uW
+Switching power: 6.76481 uW
+Leakage power: 5.90521 uW
+Total estimated power: 32.3797 uW
+
+ROUTING
+Detailed routing final iteration: 0 reported violations
+Antenna net violations: 0 reported
+Antenna pin violations: 0 reported
+
+GENERATED OUTPUTS
+pnr/6_final.gds
+pnr/6_final.def
+pnr/6_final.v
+pnr/6_final.spef
+
+SCREENSHOTS
+Results/final_all.webp.png
+Results/final_ir_drop.webp.png
+Results/final_placement.webp.png
+Results/final_routing.webp.png
+Results/final_worst_path.webp.png
+
+NOTES
+- Timing and power values are tool-reported estimates under the configured constraints and assumptions.
+- DRC and power-grid sign-off must be independently verified before claiming fabrication readiness.
+- The controller acquires digital ADC data; it does not implement the analog-to-digital converter itself.
